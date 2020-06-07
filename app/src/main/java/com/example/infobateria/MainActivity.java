@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         intentFilter.addAction(Intent.ACTION_POWER_CONNECTED);
         intentFilter.addAction(Intent.ACTION_POWER_DISCONNECTED);
         intentFilter.addAction(Intent.ACTION_BATTERY_CHANGED);
-
+        //
         registerReceiver(batteryInfoReciver, intentFilter);
     }
 
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
             result.setText(batteryInfo);
 
         } else {
-            //Toast.makeText(MainActivity.this,"No Battery Present", Toast.LENGTH_LONG).show();
+            //ast.makeText(MainActivity.this,"No Battery Present", Toast.LENGTH_LONG).show();
             result.setText("Brak Baterii / Błąd Baterii");
         }
     }
